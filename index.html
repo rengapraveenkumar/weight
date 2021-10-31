@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>calculatr</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script type="text/javascript">
+        function show(val)
+        {
+            document.getElementById("display").value += val
+        }
+        function calc()
+        {
+            var x = document.getElementById("display").value
+            var y = eval(x)
+            document.getElementById("display").value = y
+        }
+        function cr()
+        {
+            document.getElementById("display").value = " "
+        }
+        function moon()
+        {
+            var kg = document.getElementById("display").value
+            var m = kg/10
+            var a = 1.622
+            var f = m*a
+            var n = " N"
+            document.getElementById("display").value = f+n
+        }
+        function earth()
+        {
+            var kg = document.getElementById("display").value
+            var m = kg/10
+            var a = 10
+            var f = m*a
+            var n = " N"
+            document.getElementById("display").value = f+n
+        }
+        function mars()
+        {
+            var kg = document.getElementById("display").value
+            var m = kg/10
+            var a = 3.7
+            var f = m*a
+            var n = " N"
+            document.getElementById("display").value = f+n
+        }
+        function venus()
+        {
+            var kg = document.getElementById("display").value
+            var m = kg/10
+            var a = 8.87
+            var f = m*a
+            var n = " N"
+            document.getElementById("display").value = f+n
+        }
+        function jupiter()
+        {
+            var kg = document.getElementById("display").value
+            var m = kg/10
+            var a = 24.5
+            var f = m*a
+            var n = " N"
+            document.getElementById("display").value = f+n
+        }
+        function sun()
+        {
+            var kg = document.getElementById("display").value
+            var m = kg/10
+            var a = 275
+            var f = m*a
+            var n = " N"
+            document.getElementById("display").value = f+n
+        }
+    </script>
+    <style type="text/css">
+        body
+        {
+            padding: 0px;
+            margin: 0px;
+            background-image:url('https://www.dropbox.com/s/vcd0089o0nrjcir/o_bg.jpg?raw=1');
+        }
+        textarea
+        {
+            padding: 20px;
+            text-align: right;
+            background-color: rgba(217, 179, 255,0.8);
+            color: #ffffff;
+            width: 94%;
+            font-weight: bold; 
+            font-size: 35px;
+            border:none;
+        }
+        input[type="button"]
+        {
+            padding: 15px;
+            width: 100%;
+            background-color:rgba(255, 255, 179,0.1);
+            border:none;
+            font-weight: bold;
+            color: #ffffff;
+            font-size: 20px;
+            height: 100%;
+        }
+        input[type="button"]:hover
+        {
+            background-color:rgba(153, 204, 255,0.5);
+            color: #000000;
+            outline: none;
+            border-radius: 10px;
+            border:none;
+        }
+        table
+        {
+            /*background-color: #4da6ff;*/
+            
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            padding: 20px;
+            width: 100%;
+        }
+        @media (width: 400px)
+        {
+            body
+            {
+            
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        alert("welcome, This is 'Agner :={|)~'")
+        alert ("It will tell you exactly how much your weight is on the moon and other planets....")
+        alert ("enter your weight here and select your respective choice...")
+    </script>
+</head>
+<body>
+    <div class="bod">
+        <table>
+            <tr>
+                <td colspan="3"><textarea id="display" placeholder="Agner :={|)~                   0." disabled></textarea></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="7" onclick="show('7')"/></td>
+                <td><input type="button" value="8" onclick="show('8')"></td>
+                <td><input type="button" value="9" onclick="show('9')"></td>            
+            </tr>
+            <tr>
+                <td><input type="button" value="4" onclick="show('4')"></td>
+                <td><input type="button" value="5" onclick="show('5')"></td>
+                <td><input type="button" value="6" onclick="show('6')"></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="1" onclick="show('1')"></td>
+                <td><input type="button" value="2" onclick="show('2')"></td>
+                <td><input type="button" value="3" onclick="show('3')"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input type="button" value="0" onclick="show('0')"></td>
+                <td><input type="button" value="C" onclick="cr()" style="background-color: rgba(217, 38, 38,0.6) "></td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Earth" onclick="earth()" style="background-color: rgba(179, 255, 255,0.6) "></td>
+                <td><input type="button" value="Moon" onclick="moon()" style="background-color: rgba(255, 255, 179,0.6) "></td>
+                <td><input type="button" value="Mars" onclick="mars()" style="background-color: rgba(255, 128, 128,0.6) "></td>
+            </tr>    
+            <tr>
+                <td><input type="button" value="Venus" onclick="venus()" style="background-color: rgba(255, 223, 128,0.6) "></td>
+                <td><input type="button" value="Jupiter" onclick="jupiter()" style="background-color: rgba(255, 255, 128,0.6) "></td>
+                <td><input type="button" value="Sun" onclick="sun()" style="background-color: rgba(236, 236, 19,0.6) "></td>
+            </tr>
+            <tr>
+                <td colspan="5" align="right" style="color: #ffffff; font-family: sans-serif; opacity: 50%">Developed by "Agner :={|)~"</td>
+            </tr>
+        </table>        
+    </div>
+</body>
+</html>
